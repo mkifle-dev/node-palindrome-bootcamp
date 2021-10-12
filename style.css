@@ -1,0 +1,98 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* .alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+
+
+/* .alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+/* } */ 
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+  font-size: 100px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 50%; 
+  border-top: 50%; 
+  text-align: center;
+  
+} */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body, html {
+  height:100%;
+  background: url('https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/kite.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+html{
+  border-top: 5%; 
+  margin-top: 5%; 
+
+}
+h1{
+  text-align: center;
+  text-shadow: 2px 3px #333;
+  margin-right: 30%; 
+  margin-left: 30%; 
+  border-radius: 12px;
+  background-color: rgba(52, 73, 94, 0.75);
+  transition: all .2s ease-in-out;
+  margin-top: 10%;  
+  
+
+
+
+}
+body{
+  background-color:#5F4B8BFF; 
+  color: #E69A8DFF; 
+}
+
+#mid{
+  text-align: center;
+}
+
+button{
+  background-color: #E69A8DFF; 
+  box-shadow: 
+  inset 0.1em -0.2em 0 4px #E69A8DFF; 
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
