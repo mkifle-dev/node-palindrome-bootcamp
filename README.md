@@ -6,7 +6,7 @@
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript, nodeJS
 
 ## Lessons Learned:
 In order to create the palindrome checker applicatdion, the methods used were: .split() .reverse() and .join(). I also used an API to to call the methods on the input value. 
