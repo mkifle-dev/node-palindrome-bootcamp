@@ -5,14 +5,14 @@ const querystring = require('querystring');
 const figlet = require('figlet') //package we installed with node. 
 
 const server = http.createServer(function(req, res) { // creating a server. we are accessing http module here; createserver=method we are using in this instance. 
-  const page = url.parse(req.url).pathname; //path name thats' being used (inpoint being hit from front end)
+  const page = url.parse(req.url).pathname; //path name thats' being used
   const params = querystring.parse(url.parse(req.url).query);
   // creating an object called params that will hold all of our query parameters 
-  //example: queryparameter is ?student=value
-  // excample of params object {student: value}
+  //ex: queryparameter is ?student=value
+  //ex: of params object {student: value}
 
   console.log(page); // object of all the parameter of all the urls
-  if (page == '/') { // just the url ex: "facebook.com/"
+  if (page == '/') {
     fs.readFile('index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
@@ -25,7 +25,7 @@ const server = http.createServer(function(req, res) { // creating a server. we a
     let determinePalidrome =  lowParam == checker ? 'Yes' : 'No'
     if('student' in params){  //storing relv info into obj
       // we are looking for students in the params object 
-        if(params['student'] ){ //? student (front) 
+        if(params['student'] ){ 
       
           res.writeHead(200, {'Content-Type': 'application/json'});
           const objToJson = {
